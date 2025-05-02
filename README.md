@@ -1,10 +1,5 @@
 # Discord-AI
-搭配[https://github.com/clre20/Cloudflare-Workers-AI](https://github.com/clre20/Cloudflare-Workers-AI) 使用
-
-以下是你的 Discord 機器人說明文件，包含安裝套件、設定環境與修改項目：
-
 ---
-
 # Discord AI Bot 說明文件
 
 這是一個基於 Discord API 和 Gemini AI (Google Generative AI) 的機器人，支援不同 AI 模型切換與記憶對話功能。
@@ -32,6 +27,7 @@ API_KEY = "你的_Gemini_api_key"
 ```python
 url = "https://example.com"
 ```
+!!請搭配專用的[Cloudflare-Workers-AI](https://github.com/clre20/Cloudflare-Workers-AI) 使用
 
 ### (2) 設定 Discord Bot Token
 請替換 `你的_Discord_Bot_token` 為你的 Discord 機器人 Token：
