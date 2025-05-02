@@ -34,7 +34,7 @@ url = "https://example.com"
 ```
 
 ### (2) 設定 Discord Bot Token
-請替換 `你你的_Discord_Bot_token` 為你的 Discord 機器人 Token：
+請替換 `你的_Discord_Bot_token` 為你的 Discord 機器人 Token：
 ```python
 BOT_TOKEN = "你的_Discord_Bot_token"
 ```
@@ -43,9 +43,8 @@ BOT_TOKEN = "你的_Discord_Bot_token"
 ### (3) 設定指令前綴
 如果你想修改機器人的指令前綴：
 ```python
-COMMAND_PREFIX = "!"
+COMMAND_PREFIX = "*"
 ```
-將 `"*"` 改為你喜歡的前綴，如 `"!"` 或 `"/"`。
 
 ## 3. 啟動機器人
 
@@ -57,6 +56,10 @@ python bot.py
 ```
 機器人已啟動，身分： <Bot_Name>
 指令前綴: *
+記憶體資料夾: memory
+模型設定檔: memory/mode.json
+預設模型: 
+支援的模型:
 ```
 
 ## 4. 主要功能
@@ -65,7 +68,7 @@ python bot.py
 在 Discord 群組中 @機器人，它會使用 Gemini AI 或 Cloudflare AI 回覆訊息。
 
 ### (2) 記憶對話
-機器人會記住過去的對話，存儲在 `memory` 資料夾內，以便提供上下文。
+機器人會記住過去的對話，存儲在 `memory` 資料夾內，以提供記憶功能。
 
 ### (3) 切換 AI 模型
 使用指令：
@@ -74,7 +77,7 @@ python bot.py
 ```
 可選模型：
 - Gemini: `gemini-1.5-pro`, `gemini-1.5-flash`, `gemini-2.0-flash-lite` 等。
-- Cloudflare AI: `llama-3-8b`, `deepseek-r1`, `gemma-7b`。
+- Cloudflare AI: {依據設定}。
 
 ### (4) 刪除記憶
 指令：
