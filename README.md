@@ -23,18 +23,18 @@ pip install discord.py google-generativeai requests asyncio
 在 `bot.py` 文件內，請修改以下設定：
 
 ### (1) 設定 API Key
-請替換 `{你的 Gemini api}` 為你的 Google Gemini AI API 金鑰。
+請替換 `你的 Gemini api` 為你的 Google Gemini AI API 金鑰。
 ```python
 API_KEY = "你的_Gemini_api_key"
 ```
 
 如果你使用 Cloudflare AI Workers，也需替換 `url` 參數為你的 API 端點：
 ```python
-url = "https://your_cloudflare_workers_url"
+url = "https://example.com"
 ```
 
 ### (2) 設定 Discord Bot Token
-請替換 `{你機器人的 token}` 為你的 Discord 機器人 Token：
+請替換 `你你的_Discord_Bot_token` 為你的 Discord 機器人 Token：
 ```python
 BOT_TOKEN = "你的_Discord_Bot_token"
 ```
